@@ -159,6 +159,8 @@
 		F220AAE51AB7B8AE009A7110 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Andrew Bancroft";
 				TargetAttributes = {
@@ -411,6 +413,7 @@
 				F220AB111AB7B8AE009A7110 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F220AB121AB7B8AE009A7110 /* Build configuration list for PBXNativeTarget "PullToRefreshExample_TableViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +422,7 @@
 				F220AB141AB7B8AE009A7110 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

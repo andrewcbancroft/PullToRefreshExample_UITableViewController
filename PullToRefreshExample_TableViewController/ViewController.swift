@@ -35,7 +35,7 @@ class ViewController: UITableViewController {
 		let newMovie = Movie(title: "Serenity", genre: "Sci-fi")
 		movies.append(newMovie)
 		
-		movies.sort() { $0.title < $1.title }
+		movies.sortInPlace() { $0.title < $1.title }
 		
 		self.tableView.reloadData()
 		refreshControl.endRefreshing()
@@ -46,7 +46,7 @@ class ViewController: UITableViewController {
 	}
 	
 	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
+		let cell = tableView.dequeueReusableCellWithIdentifier("cell")!
 		
 		cell.textLabel?.text = movies[indexPath.row].title
 		cell.detailTextLabel?.text = movies[indexPath.row].genre
