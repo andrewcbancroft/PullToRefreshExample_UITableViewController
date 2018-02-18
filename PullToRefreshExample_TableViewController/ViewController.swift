@@ -27,7 +27,7 @@ class ViewController: UITableViewController {
 		self.refreshControl?.addTarget(self, action: #selector(ViewController.handleRefresh(_:)), for: UIControlEvents.valueChanged)
 	}
 	
-	func handleRefresh(_ refreshControl: UIRefreshControl) {
+	@objc func handleRefresh(_ refreshControl: UIRefreshControl) {
 		// Do some reloading of data and update the table view's data source
 		// Fetch more objects from a web service, for example...
 		
